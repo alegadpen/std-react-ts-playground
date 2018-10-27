@@ -18,11 +18,11 @@ export default class MainComponent extends React.Component<{ children: any }, {}
                 <nav className="navbar navbar-inverse navbar-fixed-top">
                     <div className="container">
                         <div className="navbar-header">
-                            <Link  className="navbar-brand" to="/">Todo FLUXless</Link>
+                            <Link  className="navbar-brand" to="/">Todo</Link>
                         </div>
 
                         <ul className="nav navbar-nav">
-                            <li><Link to="/todo">Todo</Link></li>
+                            <li><Link to="/todo">Nav to TODO</Link></li>
                         </ul>
                         <AuthComponent />
                         <TodoCounter />
@@ -32,7 +32,7 @@ export default class MainComponent extends React.Component<{ children: any }, {}
                     <LoadingComponent />
                     {this.props.children}
                 </div>
-                <footer className="footer">
+                <footer className="footer" style="display: none;">
                     <Paper zDepth={2}>
                         <div className="container">
                             <div className="row">
